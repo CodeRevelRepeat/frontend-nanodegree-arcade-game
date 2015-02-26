@@ -1,6 +1,6 @@
-frontend-nanodegree-arcade-game
+Frogger without the Frogs
 ===============================
 
-Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015/l-3072058665/m-3072588797
+Use the arrow keys to maneuver and try to make it to the stream without getting hit by a bug.  
 
-for self-checking their submission.
+Good luck!

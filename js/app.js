@@ -142,7 +142,7 @@ var checkCollisions = function(){
         console.log("collision");
 
       //Alert random message from array of collisionMessages:
-        alert(collisionMessages[Math.floor(Math.random() * 6)]);
+        alert(collisionMessages[Math.floor(Math.random() * 7)]);
         player.reset();
     }
 
@@ -154,7 +154,7 @@ var checkCollisions = function(){
 var collisionMessages = ["Ouch!", "That one really hurt!", "Darn bugs!",
 "Do you plan on improving at this?", "Someone needs some motor skills practice.",
   "I'd sure like to make it to that lovely stream some day.",
-  "What did I do to you?", "Focus, please!"];
+  "What did I do to you?", "Focus, please!", "Squished again!"];
 
 
 
