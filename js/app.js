@@ -48,6 +48,10 @@ var Player = function(x, y){
 }
 
 Player.prototype = Object.create(Enemy.prototype);
+
+//Since used Enemy prototype to create the Player.prototype, 
+//set constructor separately so know object is an instantiation of a Player
+
 Player.prototype.constructor = Player;
 
 
@@ -55,13 +59,13 @@ Player.prototype.update = function(){
  
  //If player makes it across, alert success and reset player:
    if(this.y < -10){
-      alert("You made it!!");
+      $.coolAlert("You made it!!", "Success", "success");
       this.reset();
   }
 
   //If player moves off screen, alert and reset player:
     if(this.y > 400 || this.x < 0 || this.x > 400){
-        alert("Don't run away!  I thought we were having fun.");
+        $.coolAlert("Don't run away!  I thought we were having fun.", "Out of Bounds", "outOfBounds");
         this.reset();
   }
 
@@ -134,6 +138,7 @@ document.addEventListener('keyup', function(e) {
 //player position resets:
 
 
+
 var checkCollisions = function(){
   
   for(var i=0; i< allEnemies.length; i++){
@@ -142,7 +147,7 @@ var checkCollisions = function(){
         console.log("collision");
 
       //Alert random message from array of collisionMessages:
-        alert(collisionMessages[Math.floor(Math.random() * 7)]);
+        $.coolAlert(collisionMessages[Math.floor(Math.random() * 7)], "Collision Alert", "collision");
         player.reset();
     }
 
@@ -155,6 +160,8 @@ var collisionMessages = ["Ouch!", "That one really hurt!", "Darn bugs!",
 "Do you plan on improving at this?", "Someone needs some motor skills practice.",
   "I'd sure like to make it to that lovely stream some day.",
   "What did I do to you?", "Focus, please!", "Squished again!"];
+
+
 
 
 

@@ -1,3 +1,29 @@
 body {
     text-align: center;
+    background-color: #1AB8FF;
 }
+
+
+
+.success #dialog {
+
+
+background-color: #00E8FF;
+
+}
+
+
+.collision #dialog {
+
+
+background-color: #FF8DCB;
+
+}
+
+.outOfBounds #dialog {
+
+
+background-color: #A8FFA4;
+
+}
+
